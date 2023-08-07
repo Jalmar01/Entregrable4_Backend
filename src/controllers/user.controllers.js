@@ -4,7 +4,7 @@ const { verifyAccount } = require('../utils/verifyAccount');
 const EmailCode = require('../models/EmailCode');
 const bcrypt = require('bcrypt');
 const jwt  = require('jsonwebtoken');
-const { sendEmailResetPassword } = require('../utils/sendEmailResestPassword');
+const { sendEmailResetPassword } = require('../utils/sendEmailResetPassword');
 
 const getAll = catchError(async(req, res) => {
     const results = await User.findAll();
